@@ -1,0 +1,21 @@
+<h2>Products Component</h2>
+
+<div class="products mt-5">
+  <form #ExampleForm="ngForm" (ngSubmit)="onSubmit()">
+    <input type="text" class="form-control" name="name" [(ngModel)]="name" />
+    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+  </form>
+  <hr />
+
+  <!-- Child component -->
+  <app-product
+    #productComponent
+    [product]="product"
+    [exampelInput]="name"
+    (deleteProductEvent)="onDeleteProduct()"
+  ></app-product>
+  <!-- Child component -->
+
+  <hr />
+  <button (click)="clickMe()" class="btn btn-outline-primary">Click me</button>
+</div>

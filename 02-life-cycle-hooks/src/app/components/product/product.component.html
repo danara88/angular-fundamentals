@@ -1,0 +1,10 @@
+<div class="card my-2" style="width: 100%" *ngIf="product">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.name }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ product.subtitle }}</h6>
+    <p class="card-text">
+      {{ product.description }}
+    </p>
+    <a (click)="deleteProduct()" class="card-link">Delete</a>
+  </div>
+</div>
