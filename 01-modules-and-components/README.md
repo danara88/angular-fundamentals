@@ -1,27 +1,38 @@
-# 01ModulesAndComponents
+# MÓDULOS Y COMPONENTES
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+## ¿Qué es un módulo?
 
-## Development server
+Un módulo es un contenedor que esta dedicado a una parte específica de tu aplicación.
+Ejemplo:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Módulo de usuarios
+- Módulo de ordenes
+- Módulo de compras
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ¿Qué es un componente?
 
-## Build
+Un componente es un bloque lógico el cual forma parte de tu aplicación.
+Los componentes constituyen las vistas (conocidas como view) de tu aplicación.
+Ejemplo:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- NavbarComponent
+- SidebarComponent
+- PostComponent
+- CardComponent
 
-## Running unit tests
+Los componentes son útiles para evitar duplicar código, ya que pueden ser reutilizados.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## ¿Qué son los decoradores?
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Los decoradores nos permiten añadir funcionalidades extras a una clase, propiedad o parámetro.
+En angular es común usar los decoradores para destinguir la responsabilidad de cada clase.
+Ejemplo:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Si una clase de tiene que comportar como módulo, le añadimos el decorador: **@NgModule**
+- Si una clase de tiene que comportar como componente, le añadimos el decorador: **@Component**
+- Si una propiedad se tiene que comportar como un input le añadimos el decorador: **@Input**
+- Si una propiedad se tiene que comportar como un output le añadimos el decorador: **@Output**
