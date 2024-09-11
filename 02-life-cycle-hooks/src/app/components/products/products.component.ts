@@ -45,42 +45,23 @@ export class ProductsComponent
     console.log('constructor');
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    // console.log('ngOnChanges');
-  }
+  ngOnChanges(changes: SimpleChanges): void {}
 
-  ngOnInit(): void {
-    console.log('ngOnInit');
-  }
+  ngOnInit(): void {}
 
-  ngDoCheck(): void {
-    // console.log('ngDoCheck');
-  }
+  ngDoCheck(): void {}
 
-  ngAfterContentInit(): void {
-    // console.log('ngAfterContentInit');
-  }
+  ngAfterContentInit(): void {}
 
-  ngAfterContentChecked(): void {
-    // console.log('ngAfterContentChecked');
-  }
+  ngAfterContentChecked(): void {}
 
-  ngAfterViewInit(): void {
-    // console.log(this.productComponent);
-    // console.log('ngAfterViewInit');
-  }
+  ngAfterViewInit(): void {}
 
-  ngAfterViewChecked(): void {
-    console.log('ngAfterViewChecked');
-  }
+  ngAfterViewChecked(): void {}
 
-  ngOnDestroy(): void {
-    console.log('ngOnDestroy');
-  }
+  ngOnDestroy(): void {}
 
-  onDeleteProduct() {
-    console.log('Product deleted');
-  }
+  onDeleteProduct() {}
 
   onSubmit() {}
 
