@@ -1,0 +1,68 @@
+<!-- 
+    Reactive forms:
+    Los formularios reactivos son aquellos que son creados utilizando el componente.
+    
+    Los formularios reactivos son una herramienta que nos provee Angular para crear formularios inmutables y 
+    poder crearlo sin usar two-way data binding. 
+-->
+
+<!-- 
+    Pasos:
+
+    1. Asignar el property binding llamado [formGroup] y asignarle el objeto de nuestro formulario.
+
+    2. Añadir el event ngSubmit
+
+    3. Añadir la directiva de propiedad "formControlName"
+-->
+<form [formGroup]="createProductForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="product-name" class="form-label">Name:</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Insert product name"
+      id="product-name"
+      formControlName="name"
+    />
+  </div>
+  <div>
+    <label for="product-description" class="form-label">Description:</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Insert product description"
+      id="product-description"
+      formControlName="description"
+    />
+  </div>
+  <div>
+    <label for="product-category" class="form-label">Category:</label>
+    <select
+      id="product-category"
+      class="form-select"
+      formControlName="category"
+    >
+      <option selected>Choose...</option>
+      <option value="Clothes">Clothes</option>
+      <option value="Food">Food</option>
+      <option value="Books">Books</option>
+    </select>
+  </div>
+  <div class="mt-3">
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="product-status"
+        formControlName="status"
+      />
+      <label class="form-check-label" for="product-status">
+        Is in sell? Check if the product is in sell.</label
+      >
+    </div>
+  </div>
+  <div class="mt-3">
+    <button type="submit" class="btn btn-primary">Create product</button>
+  </div>
+</form>
