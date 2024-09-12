@@ -1,27 +1,27 @@
-# 03Forms
+# Angular forms
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+---
 
-## Development server
+## Template-based forms
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Templase-base forms usan two-way data binding para actualizar información relacionada a un modelo de un componente.
+Este usa directivas para su construcción.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Reactive forms
 
-## Build
+Los formularios reactivos son aquellos que son creados utilizando el componente.
+Los formularios reactivos son una herramienta que nos provee Angular para crear formularios inmutables y poder crearlo sin usar two-way data binding.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+# Data Binding
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Interpolation**: Ejemplo: `{{ product.name }}`
 
-## Running end-to-end tests
+- **Property Binding**: Ejemplo: `<img [src]="product.image" />`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Event Binding**: Ejemplo: `<img (click)="toggleImage()" />`
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Two-way Binding**: Ejemplo: `<input [(ngModle)]="product.name" />`

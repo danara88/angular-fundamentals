@@ -1,0 +1,84 @@
+<!-- 
+    Template-based form:
+    Usan two-way data binding para actualizar información relacionada a un modelo de un componente.
+    Este usa directivas para su construcción.   
+-->
+
+<!-- 
+    Pasos:
+
+    1. Asignar un nombre a tu formulario y asignarle el valor de la directiva ngForm: #createProductForm="ngForm"
+    ngForm es la directiva encargada de hacer que nuestro template form funcione.
+
+    2. Usar el event binding llamado "ngSubmit" y asignarle un evento.
+
+    3. Añadir todos los inputs requeridos.
+
+    4. Una vez añadido todos los inputs asignar los siguientes puntos: 
+        - Asignar el atributo name. Ejemplo: name="description"
+        - Asignar la referencia pasandole el valor de la directiva "ngModel" (Ejemplo: #name="ngModel")
+        - Asignar la directiva de propiedad "[(ngModel)]" 
+        - Asignar validadores usando directivas. Ejemplo: required, maxLength, minLength, etc
+-->
+<form #createProductForm="ngForm" (ngSubmit)="onSubmit(createProductForm)">
+  <div>
+    <label for="product-name" class="form-label">Name:</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Insert product name"
+      id="product-name"
+      name="name"
+      #name="ngModel"
+      [(ngModel)]="product.name"
+      required
+    />
+  </div>
+  <div>
+    <label for="product-description" class="form-label">Description:</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Insert product description"
+      id="product-description"
+      name="description"
+      #description="ngModel"
+      [(ngModel)]="product.description"
+      required
+    />
+  </div>
+  <div>
+    <label for="product-category" class="form-label">Category:</label>
+    <select
+      id="product-category"
+      class="form-select"
+      name="category"
+      #category="ngModel"
+      [(ngModel)]="product.category"
+      required
+    >
+      <option selected>Choose...</option>
+      <option value="Clothes">Clothes</option>
+      <option value="Food">Food</option>
+      <option value="Books">Books</option>
+    </select>
+  </div>
+  <div class="mt-3">
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="product-status"
+        name="status"
+        #status="ngModel"
+        [(ngModel)]="product.status"
+      />
+      <label class="form-check-label" for="product-status">
+        Is in sell? Check if the product is in sell.</label
+      >
+    </div>
+  </div>
+  <div class="mt-3">
+    <button type="submit" class="btn btn-primary">Create product</button>
+  </div>
+</form>
