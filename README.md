@@ -1,6 +1,7 @@
 # ANGULAR FUNDAMENTALS
 
 Este repositorio contiene los temas principales para la construcción de una aplicación web básica usando Angular.
+Instrucciones para preparar ambiente local de Angular aquí: https://docs.angular.lat/guide/setup-local
 
 ## Objetivo del repositorio
 
