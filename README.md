@@ -11,8 +11,8 @@ Instrucciones para preparar ambiente local de Angular aquí: https://docs.angula
 ## Temas
 
 - Sesión 1: Modules and components.
-- Sesión 2: Angular life cycles hooks.
-- Sesión 3: Angular forms (Template/Reactive).
-- Sesión 4: Services and routing.
+- Sesión 2: Angular forms (Template/Reactive).
+- Sesión 3: Services and routing.
+- Sesión 4: Angular life cycles hooks.
 - Sesión 5: Components communication.
 - Sesión 6: Angular directives and pipes.
