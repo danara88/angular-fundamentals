@@ -28,5 +28,6 @@ export class ReactiveFormComponent {
     }
 
     console.log(this.createProductForm.controls);
+    console.log(this.createProductForm.controls['name'].value);
   }
 }

@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { UserComponent } from './pages/user/user.component';
 import { UsersComponent } from './pages/users/user.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   // Importar los componentes que vamos a utilizar para este modulo (AppModule)
@@ -16,7 +17,7 @@ import { UsersComponent } from './pages/users/user.component';
   // Al usar rutas, tenemos que importar el modulo donde las tenemos declaradas: AppRoutingModule
   imports: [BrowserModule, AppRoutingModule],
 
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

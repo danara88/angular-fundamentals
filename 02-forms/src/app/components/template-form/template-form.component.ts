@@ -17,6 +17,7 @@ export class TemplateFormComponent {
   };
 
   onSubmit(form: NgForm) {
+    console.log(form);
     if (form.invalid) {
       console.log('El formulario es invalido!');
       return;
