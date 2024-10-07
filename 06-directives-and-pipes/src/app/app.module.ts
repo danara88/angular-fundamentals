@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { ComponentDirectiveComponent } from './components/component-directive/component-directive.component';
 import { AttributeDirectivesComponent } from './components/attribute-directives/attribute-directives.component';
 import { StructuralDirectivesComponent } from './components/structural-directives/structural-directives.component';
+import { PipesExampleComponent } from './components/pipes-example/pipes-example.component';
+import { ActiveUsersPipe } from './pipes/active-users.pipe';
 
 @NgModule({
   declarations: [
@@ -12,6 +14,8 @@ import { StructuralDirectivesComponent } from './components/structural-directive
     ComponentDirectiveComponent,
     AttributeDirectivesComponent,
     StructuralDirectivesComponent,
+    PipesExampleComponent,
+    ActiveUsersPipe,
   ],
   imports: [BrowserModule],
   providers: [],

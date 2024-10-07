@@ -1,0 +1,25 @@
+<!-- https://www.telerik.com/blogs/angular-basics-built-pipes-examples-each -->
+
+<h1>Pipes</h1>
+
+<!-- Pipe: currency | output: $200.00 -->
+<p>{{ 200 | currency }}</p>
+
+<!-- Pipe: date | output: 12:56:16 -->
+<p>{{ currentDate | date : "hh:mm:ss" }}</p>
+
+<!-- Pipe: date | output: 07/10/2024 -->
+<p>{{ currentDate | date : "dd/MM/yyyy" }}</p>
+
+<!-- Pipe: uppercase | output: GERARDO  -->
+<p>{{ "gerardo" | uppercase }}</p>
+
+<!-- Pipe: lowercase | output: gerardo -->
+<p>{{ "GERARDO" | lowercase }}</p>
+
+<!-- Pipe: TitleCasePipe | output: Esto Es Un Titulo -->
+<p>{{ "Esto es un titulo" | titlecase }}</p>
+
+<div>
+  <!-- Implement here code to show active users only -->
+</div>
