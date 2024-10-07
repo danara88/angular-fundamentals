@@ -37,29 +37,38 @@ export class ProductsComponent
     description: 'Macbook Pro 2023 M1',
   };
 
-  @ViewChild('productComponent') productComponent?: ProductComponent;
+  @ViewChild('productComponentCualquierNombre')
+  productComponent?: ProductComponent;
 
   public name: string = '';
 
   constructor() {
-    console.log('constructor');
+    // console.log('constructor');
   }
 
   ngOnChanges(changes: SimpleChanges): void {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // console.log('ngOnInit');
+  }
 
-  ngDoCheck(): void {}
+  ngDoCheck(): void {
+    // console.log('ngDoCheck');
+  }
 
   ngAfterContentInit(): void {}
 
   ngAfterContentChecked(): void {}
 
-  ngAfterViewInit(): void {}
+  ngAfterViewInit(): void {
+    console.log(this.productComponent);
+  }
 
   ngAfterViewChecked(): void {}
 
-  ngOnDestroy(): void {}
+  ngOnDestroy(): void {
+    // console.log('ngOnDestroy');
+  }
 
   onDeleteProduct() {}
 

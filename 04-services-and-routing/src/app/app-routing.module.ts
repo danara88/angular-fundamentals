@@ -24,7 +24,7 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: '/home',
-    pathMatch: 'full', // Significa que debe hacer completamente matchg con el path "/"
+    pathMatch: 'full', // Significa que debe hacer completamente match con el path "/"
   },
   {
     path: '**', // Si la ruta no existe, redireccionar a /home

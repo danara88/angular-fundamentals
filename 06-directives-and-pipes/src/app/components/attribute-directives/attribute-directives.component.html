@@ -1,0 +1,17 @@
+<h1>Atribute Directives</h1>
+
+<!-- ngClass -->
+<div>
+  Status using ngClass:
+  <span [ngClass]="status === 'completed' ? 'success' : 'error'">{{
+    status
+  }}</span>
+</div>
+
+<!-- ngStyle -->
+<div>
+  Status using ngStyle:
+  <span [ngStyle]="{ color: status === 'completed' ? 'green' : 'red' }">{{
+    status
+  }}</span>
+</div>

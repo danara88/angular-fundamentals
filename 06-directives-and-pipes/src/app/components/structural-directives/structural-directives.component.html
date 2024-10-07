@@ -1,0 +1,18 @@
+<h1>Structural Directives</h1>
+
+<!-- Structural Directive: ngFor -->
+<ul *ngFor="let user of users; let i = index">
+  <li>{{ i + 1 }} - {{ user.name }}</li>
+</ul>
+
+<!-- Structural Directive: ngIf con else -->
+<div *ngIf="isLoading; else notLoading">Loading ...</div>
+
+<ng-template #notLoading> The data is already loaded. </ng-template>
+
+<!-- Structural Directive: ngSwitch -->
+<div [ngSwitch]="status">
+  <span *ngSwitchCase="'pending'">Pending</span>
+  <span *ngSwitchCase="'completed'">Completed</span>
+  <span *ngSwitchCase="'incompleted'">Incompleted</span>
+</div>
