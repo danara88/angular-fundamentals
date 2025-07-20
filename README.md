@@ -1,14 +1,15 @@
-# ANGULAR FUNDAMENTALS
+# ANGULAR FUNDAMENTALS 🤘🏻
 
 Este repositorio contiene los temas principales para la construcción de una aplicación web básica usando Angular.
 Instrucciones para preparar ambiente local de Angular aquí: https://docs.angular.lat/guide/setup-local
 
-## Objetivo del repositorio
+## Objetivo del repositorio 🎯
 
-- Mostrar los elementos básicos.
+- Mostrar los elementos básicos sobre el framework Angular.
 - Entender el funcionamiento de cada elemento.
+- Introducir el framework Angular a aquellos nuevos ingresados en la materia de una manera fácil y rápida.
 
-## Temas
+## Temas 📚
 
 - Sesión 1: Modules and components.
 - Sesión 2: Angular forms (Template/Reactive).
